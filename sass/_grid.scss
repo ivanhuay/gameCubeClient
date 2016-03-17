@@ -1,0 +1,292 @@
+//variables
+$col1: 6.34058%;
+$col2: 14.85507%;
+$col3: 23.36957%;
+$col4: 31.88406%;
+$col5: 40.39855%;
+$col6: 48.91304%;
+$col7: 57.42754%;
+$col8: 65.94203%;
+$col9: 74.45652%;
+$col10: 82.97101%;
+$col11: 91.48551%;
+$col12: 100%;
+
+$margin-left: 2.17391%;
+
+//grilla general
+.row {
+  width: 100%;
+}
+.row:before, .row:after {
+  content: "";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+.row [class^="col"] {
+  width: 100%;
+  display: block;
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.row [class^="col"]:first-child {
+  margin-left: 0;
+}
+.row .col1 {
+  width: $col1;
+  margin-left: $margin-left;
+}
+.row .col2 {
+  width: $col2;
+  margin-left: $margin-left;
+}
+.row .col3 {
+  width: $col3;
+  margin-left: $margin-left;
+}
+.row .col4 {
+  width: $col4;
+  margin-left: $margin-left;
+}
+.row .col5 {
+  width: $col5;
+  margin-left: $margin-left;
+}
+.row .col6 {
+  width: $col6;
+  margin-left: $margin-left;
+}
+.row .col7 {
+  width: $col7;
+  margin-left: $margin-left;
+}
+.row .col8 {
+  width: $col8;
+  margin-left: $margin-left;
+}
+.row .col9 {
+  width: $col9;
+  margin-left: $margin-left;
+}
+.row .col10 {
+  width: $col10;
+  margin-left: $margin-left;
+}
+.row .col11 {
+  width: $col11;
+  margin-left: $margin-left;
+}
+.row .col12 {
+  width: $col12;
+}
+.row .first {
+  margin-left: 0;
+}
+.row .col0 {
+  display: none;
+}
+
+@media (max-width: 599px) {
+  .row [class^="col-small"] {
+    width: $col12;
+    display: block;
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .row [class^="col-small"]:first-child {
+    margin-left: 0;
+  }
+  .row .col1-small {
+    width: $col1;
+    margin-left: $margin-left;
+  }
+  .row .col2-small {
+    width: $col2;
+    margin-left: $margin-left;
+  }
+  .row .col3-small {
+    width: $col3;
+    margin-left: $margin-left;
+  }
+  .row .col4-small {
+    width: $col4;
+    margin-left: $margin-left;
+  }
+  .row .col5-small {
+    width: $col5;
+    margin-left: $margin-left;
+  }
+  .row .col6-small {
+    width: $col6;
+    margin-left: $margin-left;
+  }
+  .row .col7-small {
+    width: $col7;
+    margin-left: $margin-left;
+  }
+  .row .col8-small {
+    width: $col8;
+    margin-left: $margin-left;
+  }
+  .row .col9-small {
+    width: $col9;
+    margin-left: $margin-left;
+  }
+  .row .col10-small {
+    width: $col10;
+    margin-left: $margin-left;
+  }
+  .row .col11-small {
+    width: $col11;
+    margin-left: $margin-left;
+  }
+  .row .col12-small {
+    width: $col12;
+  }
+  .row .first-small {
+    margin-left: 0;
+  }
+  .row .col0-small {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+  .row [class^="col-medium"] {
+    width: $col12;
+    display: block;
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .row [class^="col-medium"]:first-child {
+    margin-left: 0;
+  }
+  .row .col1-medium {
+    width: $col1;
+    margin-left: $margin-left;
+  }
+  .row .col2-medium {
+    width: $col2;
+    margin-left: $margin-left;
+  }
+  .row .col3-medium {
+    width: $col3;
+    margin-left: $margin-left;
+  }
+  .row .col4-medium {
+    width: $col4;
+    margin-left: $margin-left;
+  }
+  .row .col5-medium {
+    width: $col5;
+    margin-left: $margin-left;
+  }
+  .row .col6-medium {
+    width: $col6;
+    margin-left: $margin-left;
+  }
+  .row .col7-medium {
+    width: $col7;
+    margin-left: $margin-left;
+  }
+  .row .col8-medium {
+    width: $col8;
+    margin-left: $margin-left;
+  }
+  .row .col9-medium {
+    width: $col9;
+    margin-left: $margin-left;
+  }
+  .row .col10-medium {
+    width: $col10;
+    margin-left: $margin-left;
+  }
+  .row .col11-medium {
+    width: $col11;
+    margin-left: $margin-left;
+  }
+  .row .col12-medium {
+    width: $col12;
+  }
+   .row .first-medium {
+    margin-left: 0;
+  }
+  .row .col0-medium {
+    display: none;
+  }
+}
+
+@media (min-width: 801px) {
+  .row [class^="col-large"] {
+    width: $col12;
+    display: block;
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .row [class^="col-large"]:first-child {
+    margin-left: 0;
+  }
+  .row .col1-large {
+    width: $col1;
+    margin-left: $margin-left;
+  }
+  .row .col2-large {
+    width: $col2;
+    margin-left: $margin-left;
+  }
+  .row .col3-large {
+    width: $col3;
+    margin-left: $margin-left;
+  }
+  .row .col4-large {
+    width: $col4;
+    margin-left: $margin-left;
+  }
+  .row .col5-large {
+    width: $col5;
+    margin-left: $margin-left;
+  }
+  .row .col6-large {
+    width: $col6;
+    margin-left: $margin-left;
+  }
+  .row .col7-large {
+    width: $col7;
+    margin-left: $margin-left;
+  }
+  .row .col8-large {
+    width: $col8;
+    margin-left: $margin-left;
+  }
+  .row .col9-large {
+    width: $col9;
+    margin-left: $margin-left;
+  }
+  .row .col10-large {
+    width: $col10;
+    margin-left: $margin-left;
+  }
+  .row .col11-large {
+    width: $col11;
+    margin-left: $margin-left;
+  }
+  .row .col12-large {
+    width: $col12;
+  }
+   .row .first-large {
+    margin-left: 0;
+  }
+  .row .col0-large {
+    display: none;
+  }
+}

@@ -1,0 +1,10 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "grid";
+
+.caja {
+    background-color: black;
+    height: 200px;
+    position: absolute;
+    width: 200px;
+}
