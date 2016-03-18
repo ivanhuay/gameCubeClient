@@ -5,13 +5,16 @@ var caja = {
     left: 50
 };
 var miId;
-socket.on('createBox', function(id) {
-    miId = id; //encodeURIComponent(id);
+socket.on('createBox', function(data) {
+	$(".caja").remove();
+
+    miId = data.id; //encodeURIComponent(id);
     $(".row").append("<div class='caja' id='caja_" + miId + "'></div>")
     console.log("#caja_" + miId);
     $("#caja_" + miId).css({
         "top": caja.top + "px",
-        "left": caja.left + "px"
+        "left": caja.left + "px",
+        "background-color":data.color
     });
 
     $(document).on("keydown", function(e) {
@@ -33,16 +36,16 @@ socket.on('createBox', function(id) {
     });
 });
 
-socket.on("createPeople",function(peopleId){
-	if($("#caja_" + peopleId).length){
+socket.on("createPeople",function(data){
+	if($("#caja_" + data.id).length){
 		return 0;
 	}
-	$(".row").append("<div class='caja' id='caja_" + peopleId + "'></div>")
-    console.log("#caja_" + peopleId);
-    $("#caja_" + peopleId).css({
+	$(".row").append("<div class='caja' id='caja_" + data.id + "'></div>")
+    console.log("#caja_" + data.id);
+    $("#caja_" + data.id).css({
         "top": "50px",
         "left": "50px",
-        "background-color":"red"
+        "background-color":data.color
     });
 });
 

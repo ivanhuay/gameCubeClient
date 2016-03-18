@@ -468,7 +468,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 5, ../sass/style.scss */
 .caja {
-  background-color: black;
   height: 200px;
   position: absolute;
   width: 200px;
